@@ -24,13 +24,10 @@ Please fill in answers to the questions below:
 
 8. Do all of your HTML pages pass the W3C HTML validator?
 (https://validator.w3.org/)
-	
+	All of the html pages including domain pages, calc, animal, hw01 and hw02 pass the validator
 
 9. Which parts of this assignment did you have trouble with, if any?
-
-
-
-
+	Calculator, since need to take lots of consideration with the design
 
 And here's a list of tasks for grading comments. Just leave this here:
  - Task 1
