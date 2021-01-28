@@ -1,6 +1,7 @@
 (function(){
 	"use strict";
-	/* store the current function */
+	/* store the current function
+	 */
 	var func = "";
 	/*store the most recent operator, if the function is "1 + ", 
 	 * op will be "+",if function is completed the operator will be "", 
