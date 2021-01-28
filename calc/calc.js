@@ -9,17 +9,17 @@
 	 * considered as complete, like "1+2+3" is completed 
 	 */
 	var op = "";
-	/* The most recent number, for example "2/3+100" the most
+	/* The most recent number, for example "23+100" the most
 	 * recent number will be 100*/
 	var num = "";
 	/* check if the function is complete and evaluted, for example, 
 	 * if entered function "1 + 2", this is considered complete, 
-	 * and if the user entered "+/=", it will evaluate the function 
+	 * and if the user entered "+=", it will evaluate the function 
 	 * and considered as finished. After finished, if user enter 
 	 * another number, it will automatically cleared up and change to the 
 	 * newly entered number. For thsi program, it will store the entered 
 	 * function and evaluate at very last when the function is considered 
-	 * as complete and user had entered "+/=" after completing the function
+	 * as complete and user had entered "+=" after completing the function
 	 */
 	var finished = false;
 	var complete = false;
@@ -139,7 +139,7 @@
 	function evalPlus() {
 		let display = document.getElementById("value");
 		/* if the function is considered as complete, 
-		 * when user enter the "+/=" sign it will considered 
+		 * when user enter the "+=" sign it will considered 
 		 * as using enter key and evaluate the function and clear 
 		 * things up.
 		 */
@@ -215,8 +215,7 @@
 	}
 	/* this function will split the stored function into numbers and opertors 
 	 * and do the evaluation by order, for example if the input function 
-	 * is "1+2+3/2+1*2" this will evaluate 1+2, and +3
-	 * and result as 6 and /2 and then +1 and time 2 and such. 
+	 * is "1+2*2" this will evaluate 1+2, and then time 2 and such. 
 	 */
 	function evalExp() {
 		var lm = func.match(/[^\d()]+|[\d.]+/g);
