@@ -1,6 +1,6 @@
 (function(){
 	"use strict";
-	//store the current function 
+	/* store the current function */
 	var func = "";
 	/*store the most recent operator, if the function is "1 + ", 
 	 * op will be "+",if function is completed the operator will be "", 
@@ -22,9 +22,9 @@
 	 */
 	var finished = false;
 	var complete = false;
-	//Display the number and do operations if the input is number button
+	/*Display the number and do operations if the input is number button*/
 	function numInput(x){
-		//display of the calculator, displaying entered value
+		/*display of the calculator, displaying entered value*/
 		let display = document.getElementById("value");
 		/*if the display value 0 and does not contain any dot value
 		 * change the display value to the entered valued and add to 
@@ -38,7 +38,7 @@
 			finished = false;
 			complete = false;
 		}
-		//if the display value is not zero or does contain the dot value
+		/*if the display value is not zero or does contain the dot value*/
 		else {
 			/*if the function is complete and evaluated, clear things 
 			 * up and change to entered value and add to current
@@ -51,7 +51,7 @@
 				finished = false;
 				complete = false;
 			}
-			//if the function is not complete, append the value
+			/*if the function is not complete, append the value*/
 			else {
 				display.value += x;
 				func += x;
@@ -64,18 +64,18 @@
 					complete = true;
 					num = x;
 				}
-				//else just append the number
+				/*else just append the number*/
 				else {
 					num+= x;
 				}
 			}
 		}
 	}
-	// do operations if the input is an operator 
+	/* do operations if the input is an operator */ 
 	function opInput(x) {
 		let display = document.getElementById("value");
 		switch(x) {
-			//do plus and enter evaluation 
+			/*do plus and enter evaluation*/
 			case "+/=":
 				evalPlus();
 				break;
@@ -85,14 +85,14 @@
 				 * should not enter the new operator
 				 */
 				if (op === "") {
-					//apend the display value to the operator
+					/*apend the display value to the operator*/
 					display.value += "-";
-					//append the current function to the operator
+					/*append the current function to the operator*/
 					func += "-";
-					//declare the most recent operator to be "-"
+					/*declare the most recent operator to be "-"*/
 					op = "-";
 					complete = false;
-					//declare the function as not complete and finished
+					/*declare the function as not complete and finished*/
 					finished = false;
 					num = "";
 				}
@@ -134,7 +134,7 @@
 		}
 
 	}
-	//evaluate the plus and enter function
+	/*evaluate the plus and enter function*/
 	function evalPlus() {
 		let display = document.getElementById("value");
 		/* if the function is considered as complete, 
@@ -165,7 +165,7 @@
 		}
 	}
 
-	//add dot according to conditions
+	/*add dot according to conditions*/
 	function evalDot() {
 		let display = document.getElementById("value");
 		/* if the function is evaluated already and marked as complete
