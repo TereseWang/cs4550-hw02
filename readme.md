@@ -1,4 +1,4 @@
-www.teresewang.com 
+# Directed Websites
+#### http://www.teresewang.com 
 
-
-hw02.teresewang.com
+#### http://hw02.teresewang.com
